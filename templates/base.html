@@ -12,19 +12,24 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="">Django Blog</a>
+      <a class="navbar-brand" href="http://127.0.0.1:8000">Django Blog</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="blog/">Blog</a>
+          <a class="nav-item nav-link active" href="http://127.0.0.1:8000">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="http://127.0.0.1:8000/blog/">Blog</a>
+          <a class="nav-item nav-link" href="http://127.0.0.1:8000/signup/">Sign up</a>
+          <a class="nav-item nav-link" href="http://127.0.0.1:8000/accounts/login/">log in</a>
+          <a class="nav-item nav-link" href="http://127.0.0.1:8000/accounts/logout/">log out</a>
         </div>
       </div>
     </nav>
-    {%block contents%}
-    {%endblock%}
+    <div style="padding:20px; border: 4px solid lightblue; border-radius: 5px; margin:20px;">
+      {%block content%}
+      {%endblock%}
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
