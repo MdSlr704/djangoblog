@@ -1,4 +1,9 @@
 {%extends "base.html"%}
 {%block content%}
 <h1>This is blog home page!</h1>
+{%for post in posts%}
+  <h3>{{post.title}}</h3><br>
+  <p>{{post.text}}</p><br>
+  <p>{{post.author}}</p><br><br><br>
+{%endfor%}
 {%endblock%}

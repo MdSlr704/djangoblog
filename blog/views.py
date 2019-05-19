@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import Blog_post
 
 def homepage (request):
-    return render (request,'bloghomepage.html',{})
+    qs = Blog_post.objects.all()
+    return render (request,'bloghomepage.html',{'posts' : qs})
