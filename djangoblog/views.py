@@ -15,3 +15,7 @@ def signup (request):
     else :
         form = UserCreationForm()
     return render(request,'signup.html',{'form':form})
+def logout (request):
+    if not request.user.is_authenticated:
+        return render(request, 'registration/loginfirst.html',{})
+    return render(request,'registration/logout.html')

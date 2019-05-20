@@ -6,4 +6,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('',views.homepage),
+    path('newpost/',views.new_post),
 ]
