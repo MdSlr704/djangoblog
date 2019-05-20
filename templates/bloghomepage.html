@@ -7,7 +7,7 @@
     <b><h3 style="font-size: 34px">{{post.title}}</h3></b>
     <p style="font-size: 22px">{{post.text}}</p>
     <p style="font-size: 14px">published by {{post.author}} at {{post.release_date}} | last update was at {{post.update_date}}
-    <span style="float:right;padding-right:10px;"><a href="#">Edit</a> <a href="#">Delete</a></span></p>
+    <span style="float:right;padding-right:10px;"><a href="{{post.id}}/edit/">Edit</a> <a href="{{post.id}}/delete/">Delete</a></span></p>
   </div>
 {%endfor%}
 {%endblock%}
